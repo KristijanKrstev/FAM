@@ -1,4 +1,4 @@
-package com.example.financeassistant.web;
+package com.example.financeassistant.web.controller;
 
 import com.example.financeassistant.model.User;
 import com.example.financeassistant.model.exception.InvalidUser;
@@ -59,7 +59,7 @@ public class UserControler {
                 )
         );
         SecurityContextHolder.getContext().setAuthentication(authentication);
-        String jwt = TOKEN_PREFIX + tokenProvider.generateToken(authentication);
+        String jwt = SecurityConstants.TOKEN_PREFIX + tokenProvider.generateToken(authentication);
 
         return ResponseEntity.ok(new JWTLoginSuccessResponse(true,jwt));
     }

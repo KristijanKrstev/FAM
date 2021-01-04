@@ -1,4 +1,4 @@
-package com.example.financeassistant.web;
+package com.example.financeassistant.web.controller;
 
 import com.example.financeassistant.model.User;
 import com.example.financeassistant.model.Work;
