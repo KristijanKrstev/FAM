@@ -9,6 +9,7 @@
         <module>fam-transactions</module>
         <module>fam-accounts</module>
         <module>fam-savings</module>
+        <module>fam-app</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -102,14 +103,5 @@
         </dependency>
 
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
