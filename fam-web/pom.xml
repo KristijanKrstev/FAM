@@ -26,6 +26,11 @@
             <groupId>com.example</groupId>
             <artifactId>fam-savings</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>fam-work</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
