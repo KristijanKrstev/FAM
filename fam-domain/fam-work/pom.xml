@@ -10,6 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>fam-work</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>fam-users</artifactId>
+        </dependency>
+    </dependencies>
 
 
 </project>

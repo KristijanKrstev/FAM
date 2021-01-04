@@ -17,6 +17,7 @@
         <module>fam-savings</module>
         <module>fam-transactions</module>
         <module>fam-work</module>
+        <module>fam-users</module>
     </modules>
 
 
@@ -43,6 +44,12 @@
             <dependency>
                 <groupId>com.example</groupId>
                 <artifactId>fam-work</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>fam-users</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>

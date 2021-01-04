@@ -11,5 +11,19 @@
 
     <artifactId>fam-accounts</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>fam-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>fam-transactions</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>fam-users</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

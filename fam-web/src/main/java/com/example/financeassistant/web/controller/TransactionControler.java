@@ -6,7 +6,7 @@ import com.example.financeassistant.model.User;
 import com.example.financeassistant.model.exception.InvalidTransaction;
 import com.example.financeassistant.repository.jpa.JpaAccountRepository;
 import com.example.financeassistant.repository.jpa.JpaUserRepository;
-import com.example.financeassistant.service.TransactionService;
+import com.example.financeassistant.transactions.TransactionService;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.util.MimeTypeUtils;

@@ -1,19 +1,13 @@
 package com.example.financeassistant.web.controller;
 
-import com.example.financeassistant.model.User;
 import com.example.financeassistant.model.Work;
-import com.example.financeassistant.model.exception.InvalidUser;
 import com.example.financeassistant.model.exception.InvalidWork;
 import com.example.financeassistant.service.MapValidationErrorService;
 import com.example.financeassistant.service.WorkService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.util.MimeTypeUtils;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 import java.security.Principal;
 import java.util.List;
 @CrossOrigin

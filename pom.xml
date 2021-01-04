@@ -8,6 +8,7 @@
         <module>fam-infrastructure</module>
         <module>fam-app</module>
         <module>fam-domain</module>
+        <module>fam-common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -117,6 +118,12 @@
 
             <dependency>
                 <groupId>com.example</groupId>
+                <artifactId>fam-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.example</groupId>
                 <artifactId>fam-app</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -142,6 +149,12 @@
             <dependency>
                 <groupId>com.example</groupId>
                 <artifactId>fam-work</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>fam-users</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>

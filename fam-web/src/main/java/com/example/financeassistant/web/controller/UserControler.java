@@ -4,7 +4,7 @@ import com.example.financeassistant.model.User;
 import com.example.financeassistant.model.exception.InvalidUser;
 import com.example.financeassistant.payload.JWTLoginSuccessResponse;
 import com.example.financeassistant.payload.LoginRequest;
-import com.example.financeassistant.security.JwtTokenProvider;
+import com.example.financeassistant.users.security.JwtTokenProvider;
 import com.example.financeassistant.service.MapValidationErrorService;
 import com.example.financeassistant.service.UserService;
 import com.example.financeassistant.validator.UserValidator;
@@ -18,16 +18,14 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.util.MimeTypeUtils;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.security.Principal;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
-import static com.example.financeassistant.security.SecurityConstants.TOKEN_PREFIX;
+import static com.example.financeassistant.users.security.SecurityConstants.TOKEN_PREFIX;
 
 @CrossOrigin
 @RestController

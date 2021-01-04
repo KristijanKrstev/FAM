@@ -11,5 +11,11 @@
 
     <artifactId>fam-transactions</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>fam-common</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

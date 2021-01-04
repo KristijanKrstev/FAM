@@ -3,9 +3,8 @@ package com.example.financeassistant.web.controller;
 import com.example.financeassistant.model.Savings;
 import com.example.financeassistant.model.User;
 import com.example.financeassistant.model.exception.InvalidSavings;
-import com.example.financeassistant.model.exception.InvalidUser;
 import com.example.financeassistant.repository.jpa.JpaUserRepository;
-import com.example.financeassistant.service.SavingsService;
+import com.example.financeassistant.savings.SavingsService;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.util.MimeTypeUtils;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
 @CrossOrigin
