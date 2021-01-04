@@ -6,10 +6,8 @@
     <modules>
         <module>fam-web</module>
         <module>fam-infrastructure</module>
-        <module>fam-transactions</module>
-        <module>fam-accounts</module>
-        <module>fam-savings</module>
         <module>fam-app</module>
+        <module>fam-domain</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -107,6 +105,24 @@
         <dependencies>
             <dependency>
                 <groupId>com.example</groupId>
+                <artifactId>fam-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>fam-infrastructure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>fam-app</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.example</groupId>
                 <artifactId>fam-accounts</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -123,23 +139,11 @@
                 <version>${project.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>com.example</groupId>
-                <artifactId>fam-web</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.example</groupId>
-                <artifactId>fam-infrastructure</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.example</groupId>
-                <artifactId>fam-app</artifactId>
-                <version>${project.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.example</groupId>-->
+<!--                <artifactId>fam-domain</artifactId>-->
+<!--                <version>${project.version}</version>-->
+<!--            </dependency>-->
         </dependencies>
     </dependencyManagement>
 
