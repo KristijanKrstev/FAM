@@ -1,11 +1,6 @@
-package com.example.financeassistant.transactions;
+package com.example.financeassistant.accounts;
 
-import com.example.financeassistant.model.Account;
-import com.example.financeassistant.model.Transaction;
-import com.example.financeassistant.model.exception.InvalidAccount;
-import com.example.financeassistant.model.exception.InvalidTransaction;
-import com.example.financeassistant.repository.jpa.JpaTransactionRepository;
-import com.example.financeassistant.accounts.AccountService;
+import com.example.financeassistant.common.exception.InvalidAccount;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

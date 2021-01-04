@@ -1,4 +1,4 @@
-package com.example.financeassistant.transactions;
+package com.example.financeassistant.accounts;
 
 public class InvalidTransaction extends RuntimeException {
 }

@@ -1,4 +1,4 @@
-package com.example.financeassistant.users;
+package com.example.financeassistant.accounts;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -38,7 +38,7 @@ public class User implements UserDetails {
     @JsonIgnore
     @JsonBackReference
     @OneToMany(mappedBy = "user",cascade = CascadeType.ALL,orphanRemoval = true)
-    private List<Account> accounts;
+    private List<Account> accounts = new ArrayList<>();
 
    
     public User(String name,LocalDate dateOfBirth, String em,String password,String confirmPassword)

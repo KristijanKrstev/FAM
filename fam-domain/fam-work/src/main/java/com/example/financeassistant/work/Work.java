@@ -1,6 +1,6 @@
 package com.example.financeassistant.work;
 
-import com.example.financeassistant.users.User;
+import com.example.financeassistant.accounts.User;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

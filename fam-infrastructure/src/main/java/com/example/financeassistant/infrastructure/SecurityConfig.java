@@ -1,6 +1,6 @@
-package com.example.financeassistant.users.security;
+package com.example.financeassistant.infrastructure;
 
-import com.example.financeassistant.service.impl.CustomUserDetailsService;
+import com.example.financeassistant.accounts.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,7 +15,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import static com.example.financeassistant.users.security.SecurityConstants.H2_URL;
+import static com.example.financeassistant.infrastructure.SecurityConstants.H2_URL;
 
 @Configuration
 @EnableWebSecurity

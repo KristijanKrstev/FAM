@@ -1,7 +1,5 @@
 package com.example.financeassistant.accounts;
 
-import com.example.financeassistant.transactions.Transaction;
-import com.example.financeassistant.users.User;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;

@@ -1,6 +1,5 @@
-package com.example.financeassistant.users;
+package com.example.financeassistant.accounts;
 
-import com.example.financeassistant.model.User;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;

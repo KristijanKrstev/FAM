@@ -1,6 +1,5 @@
 package com.example.financeassistant.accounts;
 
-import com.example.financeassistant.users.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

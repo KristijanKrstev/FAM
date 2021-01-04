@@ -151,12 +151,6 @@
                 <artifactId>fam-work</artifactId>
                 <version>${project.version}</version>
             </dependency>
-
-            <dependency>
-                <groupId>com.example</groupId>
-                <artifactId>fam-users</artifactId>
-                <version>${project.version}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 

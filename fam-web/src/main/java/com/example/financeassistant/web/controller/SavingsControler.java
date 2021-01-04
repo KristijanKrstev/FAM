@@ -1,9 +1,9 @@
 package com.example.financeassistant.web.controller;
 
-import com.example.financeassistant.model.Savings;
-import com.example.financeassistant.model.User;
-import com.example.financeassistant.model.exception.InvalidSavings;
-import com.example.financeassistant.repository.jpa.JpaUserRepository;
+import com.example.financeassistant.accounts.JpaUserRepository;
+import com.example.financeassistant.accounts.User;
+import com.example.financeassistant.savings.InvalidSavingsException;
+import com.example.financeassistant.savings.Savings;
 import com.example.financeassistant.savings.SavingsService;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
@@ -50,18 +50,18 @@ public class SavingsControler {
                                  @RequestParam("Hopesavings") int hope_savings,
                                  Principal principal)
     {
-        Savings savings = this.savingsService.findById(savingsId,principal.getName()).orElseThrow(InvalidSavings::new);
+        Savings savings = this.savingsService.findById(savingsId,principal.getName()).orElseThrow(InvalidSavingsException::new);
         return this.savingsService.update(savingsId,saving,data,previos_state,hope_savings);
     }
 
     @GetMapping("/{sId}")
     public Savings getSavings(@PathVariable int sId,Principal principal){
-        return this.savingsService.findById(sId,principal.getName()).orElseThrow(InvalidSavings::new);
+        return this.savingsService.findById(sId,principal.getName()).orElseThrow(InvalidSavingsException::new);
     }
 
     @DeleteMapping("/{sId}")
     public void delete(@PathVariable int sId,Principal principal){
-        Savings saving = this.savingsService.findById(sId,principal.getName()).orElseThrow(InvalidSavings::new);
+        Savings saving = this.savingsService.findById(sId,principal.getName()).orElseThrow(InvalidSavingsException::new);
         this.savingsService.delete(saving.getId());
     }
 

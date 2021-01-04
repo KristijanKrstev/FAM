@@ -1,8 +1,6 @@
 package com.example.financeassistant.accounts;
 
 
-import com.example.financeassistant.transactions.Transaction;
-
 import java.util.Currency;
 import java.util.List;
 import java.util.Optional;

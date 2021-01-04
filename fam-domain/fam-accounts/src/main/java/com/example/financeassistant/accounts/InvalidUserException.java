@@ -1,4 +1,4 @@
-package com.example.financeassistant.users;
+package com.example.financeassistant.accounts;
 
 public class InvalidUserException extends RuntimeException {
 }

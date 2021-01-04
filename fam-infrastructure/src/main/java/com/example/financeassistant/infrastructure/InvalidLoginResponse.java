@@ -1,4 +1,4 @@
-package com.example.financeassistant.users;
+package com.example.financeassistant.infrastructure;
 
 import lombok.Data;
 

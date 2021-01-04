@@ -1,6 +1,6 @@
-package com.example.financeassistant.users.security;
+package com.example.financeassistant.infrastructure;
 
-import com.example.financeassistant.model.User;
+import com.example.financeassistant.accounts.User;
 import io.jsonwebtoken.*;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
@@ -9,8 +9,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.example.financeassistant.users.security.SecurityConstants.EXPIRATION_TIME;
-import static com.example.financeassistant.users.security.SecurityConstants.SECRET;
+import static com.example.financeassistant.infrastructure.SecurityConstants.EXPIRATION_TIME;
+import static com.example.financeassistant.infrastructure.SecurityConstants.SECRET;
 
 @Component
 public class JwtTokenProvider {

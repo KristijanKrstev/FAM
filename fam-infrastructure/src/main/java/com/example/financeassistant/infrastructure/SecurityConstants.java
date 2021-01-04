@@ -1,4 +1,4 @@
-package com.example.financeassistant.users.security;
+package com.example.financeassistant.infrastructure;
 
 public class SecurityConstants {
     public static final String SIGN_UP_URLS = "/users/**";

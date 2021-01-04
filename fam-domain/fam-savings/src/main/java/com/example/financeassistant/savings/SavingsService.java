@@ -1,12 +1,10 @@
 package com.example.financeassistant.savings;
 
 
-import com.example.financeassistant.model.Account;
-import com.example.financeassistant.model.Savings;
-import com.example.financeassistant.model.User;
+
+import com.example.financeassistant.accounts.User;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 

@@ -1,7 +1,7 @@
-package com.example.financeassistant.users.security;
+package com.example.financeassistant.infrastructure;
 
-import com.example.financeassistant.model.User;
-import com.example.financeassistant.service.impl.CustomUserDetailsService;
+import com.example.financeassistant.accounts.CustomUserDetailsService;
+import com.example.financeassistant.accounts.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -16,8 +16,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Collections;
 
-import static com.example.financeassistant.users.security.SecurityConstants.HEADER_STRING;
-import static com.example.financeassistant.users.security.SecurityConstants.TOKEN_PREFIX;
+import static com.example.financeassistant.infrastructure.SecurityConstants.HEADER_STRING;
+import static com.example.financeassistant.infrastructure.SecurityConstants.TOKEN_PREFIX;
+
 
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 

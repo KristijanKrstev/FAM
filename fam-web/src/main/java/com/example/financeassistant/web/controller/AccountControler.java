@@ -1,9 +1,9 @@
 package com.example.financeassistant.web.controller;
 
-import com.example.financeassistant.model.Account;
-import com.example.financeassistant.model.exception.InvalidAccount;
+import com.example.financeassistant.accounts.Account;
 import com.example.financeassistant.accounts.AccountService;
-import com.example.financeassistant.service.MapValidationErrorService;
+import com.example.financeassistant.common.exception.InvalidAccount;
+import com.example.financeassistant.web.MapValidationErrorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

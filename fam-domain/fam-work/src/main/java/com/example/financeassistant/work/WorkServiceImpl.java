@@ -1,8 +1,8 @@
 package com.example.financeassistant.work;
 
-import com.example.financeassistant.users.InvalidUserException;
-import com.example.financeassistant.users.JpaUserRepository;
-import com.example.financeassistant.users.User;
+import com.example.financeassistant.accounts.InvalidUserException;
+import com.example.financeassistant.accounts.JpaUserRepository;
+import com.example.financeassistant.accounts.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

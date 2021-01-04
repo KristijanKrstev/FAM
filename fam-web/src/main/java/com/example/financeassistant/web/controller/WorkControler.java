@@ -1,9 +1,9 @@
 package com.example.financeassistant.web.controller;
 
-import com.example.financeassistant.model.Work;
-import com.example.financeassistant.model.exception.InvalidWork;
-import com.example.financeassistant.service.MapValidationErrorService;
-import com.example.financeassistant.service.WorkService;
+import com.example.financeassistant.web.MapValidationErrorService;
+import com.example.financeassistant.work.InvalidWorkException;
+import com.example.financeassistant.work.Work;
+import com.example.financeassistant.work.WorkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.MimeTypeUtils;
 import org.springframework.web.bind.annotation.*;
@@ -47,7 +47,7 @@ public class WorkControler {
 
     @GetMapping("/{workId}")
     public Work getWork(@PathVariable int workId) {
-        return workService.findById(workId).orElseThrow(InvalidWork::new);
+        return workService.findById(workId).orElseThrow(InvalidWorkException::new);
     }
 
     @DeleteMapping("/{id}")

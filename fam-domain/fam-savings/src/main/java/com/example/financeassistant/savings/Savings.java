@@ -1,7 +1,7 @@
 package com.example.financeassistant.savings;
 
 import com.example.financeassistant.accounts.Account;
-import com.example.financeassistant.users.User;
+import com.example.financeassistant.accounts.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;

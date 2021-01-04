@@ -1,9 +1,5 @@
-package com.example.financeassistant.users;
+package com.example.financeassistant.accounts;
 
-import com.example.financeassistant.model.Account;
-import com.example.financeassistant.model.User;
-import com.example.financeassistant.model.exception.InvalidUser;
-import com.example.financeassistant.repository.jpa.JpaUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

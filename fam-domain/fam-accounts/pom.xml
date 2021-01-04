@@ -20,10 +20,6 @@
             <groupId>com.example</groupId>
             <artifactId>fam-transactions</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>fam-users</artifactId>
-        </dependency>
     </dependencies>
 
 </project>

@@ -1,8 +1,8 @@
 package com.example.financeassistant.savings;
 
 import com.example.financeassistant.accounts.Account;
-import com.example.financeassistant.users.JpaUserRepository;
-import com.example.financeassistant.users.User;
+import com.example.financeassistant.accounts.JpaUserRepository;
+import com.example.financeassistant.accounts.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

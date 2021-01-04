@@ -1,7 +1,5 @@
-package com.example.financeassistant.users;
+package com.example.financeassistant.accounts;
 
-import com.example.financeassistant.model.Account;
-import com.example.financeassistant.model.User;
 
 import java.time.LocalDate;
 import java.util.List;

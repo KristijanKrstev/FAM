@@ -1,6 +1,5 @@
-package com.example.financeassistant.users.security;
+package com.example.financeassistant.infrastructure;
 
-import com.example.financeassistant.model.exception.InvalidLoginResponse;
 import com.google.gson.Gson;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;

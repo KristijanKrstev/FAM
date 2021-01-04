@@ -1,10 +1,7 @@
-package com.example.financeassistant.transactions;
+package com.example.financeassistant.accounts;
 
-import com.example.financeassistant.model.Account;
-import com.example.financeassistant.model.Transaction;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 

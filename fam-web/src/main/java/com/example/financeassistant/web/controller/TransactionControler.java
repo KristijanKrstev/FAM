@@ -1,12 +1,12 @@
 package com.example.financeassistant.web.controller;
 
-import com.example.financeassistant.model.Account;
-import com.example.financeassistant.model.Transaction;
-import com.example.financeassistant.model.User;
-import com.example.financeassistant.model.exception.InvalidTransaction;
-import com.example.financeassistant.repository.jpa.JpaAccountRepository;
-import com.example.financeassistant.repository.jpa.JpaUserRepository;
-import com.example.financeassistant.transactions.TransactionService;
+import com.example.financeassistant.accounts.Account;
+import com.example.financeassistant.accounts.InvalidTransaction;
+import com.example.financeassistant.accounts.JpaAccountRepository;
+import com.example.financeassistant.accounts.JpaUserRepository;
+import com.example.financeassistant.accounts.Transaction;
+import com.example.financeassistant.accounts.TransactionService;
+import com.example.financeassistant.accounts.User;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.util.MimeTypeUtils;

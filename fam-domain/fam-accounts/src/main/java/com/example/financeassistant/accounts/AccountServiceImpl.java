@@ -1,9 +1,6 @@
 package com.example.financeassistant.accounts;
 
 import com.example.financeassistant.common.exception.InvalidAccount;
-import com.example.financeassistant.transactions.Transaction;
-import com.example.financeassistant.users.JpaUserRepository;
-import com.example.financeassistant.users.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +10,7 @@ import java.util.Optional;
 
 @Service
 public class AccountServiceImpl implements AccountService {
+
 
     @Autowired
     private final JpaAccountRepository repository;
@@ -64,7 +62,7 @@ public class AccountServiceImpl implements AccountService {
 
         User user = userRepository.findAll(userName).get(0);
         Account account = this.repository.findById(id).orElseThrow(InvalidAccount::new);
-        if(!account.getUser().equals(user)){
+        if(!user.getAccounts().contains(account)){
             throw new InvalidAccount("This account is not in your list");
         }
         return Optional.of(account);
